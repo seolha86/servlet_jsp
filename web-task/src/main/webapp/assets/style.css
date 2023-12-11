@@ -1,0 +1,535 @@
+@font-face {
+    src: url("font/NEXONLv1GothicRegular.ttf");
+    font-family: 넥슨Lv1고딕;
+}
+
+/*html, body, #wrap, #container {*/
+/*    height: 100%;*/
+/*}*/
+
+body {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #fafafa;
+    color: #222;
+    font-family: 넥슨Lv1고딕, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li, .subMenu li {
+    text-align: center;
+}
+
+form:not(.reply, .search-form) {
+    width: 500px;
+    margin: 70px auto;
+}
+
+form input:not([type="checkbox"]){
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #a6a6a6;
+}
+
+form button {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0;
+}
+
+button {
+    appearance: none;
+}
+
+h1 {
+    display: inline-block;
+    margin: 30px auto 0;
+}
+
+.index {
+    margin: 30px auto 0 190px;
+}
+
+h2 {
+    display: inline-block;
+    margin: 20px;
+}
+
+form output {
+    font-size: 14px;
+    color: red;
+}
+
+textarea {
+    width: 96.75%;
+    height: 500px;
+    resize: none;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+#header,
+#footer {
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    clear: both;
+}
+
+#nav {
+    display: inline-block;
+    width: 970px;
+    padding: 30px 0 0;
+    margin: 0 auto;
+}
+
+#nav div {
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+
+#menu {
+    text-align: center;
+    margin-left: 30px;
+}
+
+#menu li {
+    margin: auto 0;
+}
+
+#menu1, #menu2 {
+    margin-bottom: 20px;
+}
+
+.menu2 > .subMenu {
+    float: left;
+    display: none;
+}
+
+#container {
+    min-height: 100%;
+    width: 970px;
+    padding: 30px;
+    margin: auto auto 50px;
+}
+
+#section {
+    width: 670px;
+    margin: 0;
+    float: left;
+}
+
+#aside {
+    width: 300px;
+    margin: 0;
+    float: right;
+}
+
+#aside > a:first-child > div {
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    tab-index: 1;
+}
+
+#aside > div > a:not(:first-child) {
+    display: inline-block;
+    width: 48%;
+    height: 30px;
+    tab-index: 2;
+}
+
+#aside > div > a:not(:first-child) > div {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.confirm {
+    background-color: #222;
+    color: #fafafa;
+    border-radius: 10px;
+    border: none;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.confirm:hover:not(.list, .reply-btn, #secession) {
+    background-color: #07f;
+    transition: all .5s;
+}
+
+.subMenu {
+    float: left;
+    margin-top: 30px;
+    display: none;
+}
+
+#menu1:hover .menu1, #menu2:hover .menu2, #notice:hover .notice, #free:hover .free {
+    color: #0077ff;
+}
+
+#title, #content {
+    width: 800px;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid #222;
+}
+
+#content {
+    height: 500px;
+}
+
+#title:focus, #content:focus {
+    border: 2px solid #222222;
+}
+
+#writing {
+    width: 800px;
+    margin-top: 0;
+}
+
+.game {
+    background-color: white;
+    tab-index: 50;
+}
+
+.game-list > a > div {
+    width: 150px;
+    float: left;
+    margin: 18px;
+    overflow: hidden;
+}
+
+.game-list > a > div img {
+    /*width: 100%;*/
+    width: 150px;
+    height: 180px;
+    transition: all .5s;
+}
+
+.gameImg {
+    overflow: hidden;
+}
+
+.game-list > a > div:hover img {
+    transform: scale(1.1);
+}
+
+.game-list > a > div:hover {
+    box-shadow: 0 0 10px #737881;
+}
+
+.gameName {
+    /*text-align: center;*/
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.board-list {
+    width: 100%;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+.board-list > a > div {
+    border-bottom: 1px solid;
+    padding: 15px 0;
+    height: 30px;
+}
+
+.board-list > a:last-child > div {
+    border-bottom: 0;
+}
+
+.board-list > a > div > div {
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.board-list > a > div:hover > .title {
+    color: #07f;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.board-list .no {
+    width: 10%;
+}
+
+.board-list .title {
+    width: 60%;
+    text-align: left;
+}
+
+.board-list .writer, .board-list .date {
+    width: 14%;
+}
+
+.contract-wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.login {
+    width: 100%;
+    line-height: 50px;
+    margin: 80px auto 0;
+    /*margin: 0 auto;*/
+}
+
+.page {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.page > a > div {
+    display: inline-block;
+    padding: 20px;
+    margin: auto;
+}
+
+.page > a > div:hover {
+    color: #0077ff;
+}
+
+/*.page > a:last-child > div {*/
+/*    color: white;*/
+/*    background-color: #222;*/
+/*}*/
+
+.detail-wrap {
+    width: 100%;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+.detail-title {
+    height: 50px;
+    padding: 30px;
+    font-size: 24px;
+    line-height: 50px;
+    background-color: #f5f5f5;
+}
+
+.detail-title span {
+    float: right;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.detail-info {
+    background-color: #fafafa;
+    height: 20px;
+    line-height: 20px;
+    color: #777;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-top: 2px solid #a6a6a6;
+    border-bottom: 2px solid #a6a6a6;
+}
+
+.detail-info span:last-child {
+    float: right;
+}
+
+.detail-content {
+    height: 450px;
+    padding: 0 30px;
+}
+
+.detail-content p {
+    font-size: 18px;
+}
+
+.list {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.writing {
+    width: 920px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.writing > #title {
+    width: 94%;
+}
+
+.writing > #content {
+    width: 800px;
+}
+
+.writing > a > div {
+    height: 70px;
+    border-bottom: 1px solid #86898f;
+    line-height: 70px;
+}
+
+.writing > a > div > img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+.write {
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 27px 20px 15px;
+}
+
+.frm-menu > div {
+    /*display: inline-block;*/
+    float: right;
+    margin: 0 10px;
+}
+
+.frm-menu button {
+    width: 150px;
+    height: 70px;
+}
+
+.result {
+    height: 20px;
+}
+
+.form > div > * {
+    display: inline-block;
+    width: 40%;
+}
+
+.form > div > :last-child {
+    float: right;
+    text-align: right;
+}
+
+.all-game .game-list > a > div {
+    width: 285px;
+    height: 250px;
+}
+
+.all-game .game-list > a > div img {
+    width: 285px;
+    height: 180px;
+}
+
+section {
+    clear: both;
+}
+
+.header-sign {
+    margin-top: 20px;
+    float: right;
+    padding: 15px;
+    border: 3px solid #222;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.header-sign:hover {
+    color: white;
+    background-color: #0077ff;
+    border-color: #0077ff;
+    transition: all .2s;
+}
+
+.up {
+    border: 0;
+    line-height: 25px;
+}
+
+.up:hover {
+    color: #0077ff;
+    background-color: #fafafa;
+}
+
+.search-form {
+    display: inline-block;
+    width: 600px;
+    height: 50px;
+    margin: 0 0 0 40px;
+}
+
+.search {
+    display: inline-block;
+    height: 40px;
+    /*width: 300px;*/
+}
+
+.search > input {
+    width: 300px;
+    height: 40px;
+    color: #737881;
+    border: 1px solid #dde1e5;
+}
+
+.search > button {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #dde1e5;
+}
+
+.search-option {
+    width: 70px;
+    height: 40px;
+    color: #737881;
+    border: 1px solid #dde1e5;
+    padding-left: 5px;
+}
+
+#search {
+    width: 400px;
+}
+
+#reply {
+    height: 200px;
+    background-color: #e8eaee;
+    margin-top: 20px;
+}
+
+.reply-text {
+    /*float: left;*/
+    display: inline-block;
+    padding: 20px;
+    height: 100px;
+    margin: 15px auto 0 15px;
+}
+
+.reply-btn {
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 35px;
+}
